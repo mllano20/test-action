@@ -1,0 +1,15 @@
+name: Manual trigger
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: message to echo
+        required: true
+        type: string
+
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    uses: mllano20/python-gql-test/echo@main
+    with:
+      message: ${{ inputs.message }}
