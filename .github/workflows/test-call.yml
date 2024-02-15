@@ -9,7 +9,6 @@ on:
 
 jobs:
   message:
-    runs-on: ubuntu-latest
     uses: mllano20/python-gql-test/echo-once@main
     with:
       message: ${{ inputs.message }}
