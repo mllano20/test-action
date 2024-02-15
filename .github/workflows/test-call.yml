@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo message
-        usese: mllano20/python-gql-test/echo-once@main
+        uses: mllano20/python-gql-test/echo-once@main
         with:
           message: ${{ inputs.message }} 
